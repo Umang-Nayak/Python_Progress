@@ -39,3 +39,9 @@ Bhai
 
 for ok in a:
     print(ok)
+
+str1 = "UmangNayak49"
+
+print(str1[-1:-len(str1)-1:-1])
+print(str1[::-1])
+print(str1[len(str1)::-1])
