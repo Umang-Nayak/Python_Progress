@@ -15,8 +15,8 @@ print("Join :- ",".".join(list))
 
 
 
-pappu="hello and welcome to my world."
-print(pappu.capitalize())
+ok="hello and welcome to my world."
+print(ok.capitalize())
 
 
 a="8401598691"
@@ -27,5 +27,15 @@ a="umang"
 x=a.isalpha();
 print(x)
 
-x=pappu.index("welcome");
+x=ok.index("welcome");
 print(x)
+
+
+a = """
+Hi Man,
+Umang
+Bhai
+"""
+
+for ok in a:
+    print(ok)
