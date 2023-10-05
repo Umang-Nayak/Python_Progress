@@ -3,7 +3,7 @@ Set :-
     1) Set is a collection of multiple Data type value.
     2) Set is changeable ,but you can only add new value in set, and you can not remove existing value from set.
     3) The values of a set are in non-sequential order and cannot contain same value in a set.
-    4) set are defined using square brackets {}.
+    4) set are defined using curly brackets {}.
 """
 
 s1 = {}
