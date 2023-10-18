@@ -1,0 +1,58 @@
+Metacharacters in Regular Expression :-
+
+. (Dot): Matches any character except a newline.
+* (Asterisk): Matches zero or more occurrences of the preceding element.
++ (Plus): Matches one or more occurrences of the preceding element.
+? (Question Mark): Matches zero or one occurrence of the preceding element.
+[] (Character Class): Specifies a character class.
+| (Pipe): Acts as an OR operator to match one of several patterns.
+^ (Caret): Matches the start of a line.
+$ (Dollar): Matches the end of a line.
+[^] (Negated Character Class): Matches any character that is not in the character class.
+() (Parentheses): Groups expressions together.
+{} (Curly Braces): Specifies the number of occurrences to match.
+\ (Backslash): Escapes metacharacters allowing you to match them as literal characters.
+
+
+All functions of "re" module :-
+
+1) re.compile(pattern, flags=0) :-
+    This function compiles a regular expression pattern into a regular expression object,
+    which can be used for matching and searching.
+
+2) re.match(pattern, string, flags=0) :-
+    Attempts to match the regular expression pattern at the beginning of the string.
+
+3) re.search(pattern, string, flags=0) :-
+    Searches the entire string for a match to the regular expression pattern and returns the first match found.
+
+4) re.findall(pattern, string, flags=0) :-
+    Returns all non-overlapping matches of the pattern in the string as a list of strings.
+
+5) re.finditer(pattern, string, flags=0) :-
+    Returns an iterator yielding match objects for all non-overlapping matches of the pattern in the string.
+
+6) re.sub(pattern, repl, string, count=0, flags=0) :-
+    Replaces all occurrences of the pattern in the string with the replacement string repl.
+    The count argument limits the number of replacements.
+
+7) re.subn(pattern, repl, string, count=0, flags=0) :-
+    Similar to re.sub(), but it also returns the number of substitutions made.
+
+8) re.split(pattern, string, maxsplit=0, flags=0) :-
+    Splits the string by occurrences of the pattern and returns a list of substrings.
+
+9) re.escape(string) :-
+    Escapes special characters in the input string, making it safe to use as a literal in a regular expression.
+
+10) re.fullmatch(pattern, string, flags=0) :-
+    Determines if the entire string matches the regular expression pattern, returning a match object or None.
+
+11) re.purge() :-
+    Clears the regular expression cache.
+
+12) re.groups :-
+    A constant that returns the maximum number of capturing groups allowed in a regular expression.
+
+13) re.DEBUG :-
+    A flag that can be used in conjunction with other flags to enable debugging output.
