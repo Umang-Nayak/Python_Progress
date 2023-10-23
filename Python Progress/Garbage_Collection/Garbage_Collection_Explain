@@ -1,0 +1,27 @@
+Question :-
+    If we assign a=10, and then we assign a="Umang",
+    so Python's garbage collector assign new location
+    of "Umang" value or it location assign in old location
+    where the value stored in location of value "10" ?
+
+
+Answer :-
+1) In Python, when you assign a new value to a variable,
+    such as in your example where you first assign a = 10 and then a = "Umang",
+    the behavior depends on the data type of the new value.
+
+2) a = 10: When you initially assign an integer (10 in this case) to the variable a,
+    Python creates an integer object with the value 10 and assigns it to the variable a.
+    If there were no other references to the integer 10, the memory location of the integer
+    object would be reclaimed by the garbage collector when it is no longer in use.
+
+3) a = "Umang": When you later assign a string ("Umang" in this case) to the same variable a,
+    Python creates a new string object with the value "Umang" and assigns it to the variable a.
+    It does not reuse the memory location of the integer 10 because these are different data types,
+    and Python creates separate objects for them.
+
+4) So, in your example, Python creates two different objects in memory
+    for the integer 10 and the string "Umang," and the memory location
+    for "10" is not reused for "Umang" because they are of different types.
+    The memory occupied by the integer 10 would be deallocated by the
+    garbage collector if there are no other references to it.
