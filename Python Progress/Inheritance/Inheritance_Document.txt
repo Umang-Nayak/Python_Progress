@@ -1,0 +1,18 @@
+Inheritance :-
+    -> Inheritance allows to create a new class by inheriting properties and methods from an existing class.
+    -> That means a class can use all the properties of the other class.
+    -> Inheritance is a fundamental concept in object-oriented programming (OOP).
+    -> A class that inherited by another class is called a parent class.
+    -> A class that use all properties of parent class is called child class.
+    -> Child class have more access than parent class.
+    -> There are total 5 types of inheritance in python :-
+        1) Single Inheritance
+            ( A ---> B ) (1 Parent class to 1 Child class)
+        2) Multiple Inheritance
+            ( A & B ---> C ) (2 Parent class to 1 Child class)
+        3) Multilevel Inheritance   ( A ---> B ---> C )
+            ((1 Parent class to 1 Child class) & (1 Child class to 1 Grand Child class))
+        4) Hierarchical Inheritance
+            ( A ---> B & C ) (1 Parent class to 2 Child class)
+        5) Hybrid Inheritance
+            ( A ---> B & C ---> D ) (combination of different types of inheritance)
