@@ -1,0 +1,21 @@
+Encapsulation :-
+    -> It refers to the concept of restricting access to certain parts of an object and its data.
+    -> The primary goal of encapsulation is to hide the internal details of an object and
+        provide a well-defined interface for interacting with it.
+    -> This helps in maintaining the integrity and consistency of the object's data.
+    -> Encapsulation can be implemented using several mechanisms in object-oriented programming language.
+    -> These mechanisms allow you to control access to the internal data and behavior of an object.
+    -> We can implement Encapsulation Using many mechanism :-
+        1) Private Variable
+        2) Name Mangling
+        3) Getter & Setter
+
+Example :-
+    Suppose we create class and that class have many private methods and many private variables !
+    So in this case, We can say class is implementing the concept of Encapsulation.
+    That means we can say the class is capsule and the methods & variables are private data of that capsule(class).
+    We can not use the private methods and private variables outside the class.
+
+Note :-
+    So if we have to modify the value of private variable,
+    Then it's a good practice to use Getter & Setter method rather than Name Mangling !
