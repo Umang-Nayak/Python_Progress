@@ -1,0 +1,31 @@
+Abstraction :-
+    -> Abstraction is a process of hiding the implementation detail from user.
+    -> Only the highlighted set of services provided to the user.
+    -> Basically, it hides unnecessary details and exposing only the essential parts of data and functionality.
+    -> In Python, data abstraction can be achieved through various mechanisms.
+        1) Class & Object
+        2) Abstract Class
+        3) Interface
+
+Abstract Class :-
+    -> Abstract Class is a class that contain abstract methods as well as normal methods.
+    -> It is typically used as a blueprint for other classes.
+    -> To create abstract class and abstract method,
+        we have to import "ABC, abstractmethod" from "abc" module.
+    -> Subclasses that inherit from an abstract class are required to provide
+        concrete implementations for these abstract methods.
+    -> We can not create object of Abstract class !
+
+Abstract Method :-
+    -> Abstract method is a method declared in an abstract class.
+    -> It has no implementation in the abstract class itself.
+    -> To create abstract method, we have to decorate that method with "@abstractmethod".
+    -> And inside the abstract method, we have to simply write "pass" keyword
+        which means no implementation in that method.
+
+Interface :-
+    -> Interface means a class that only contain abstract methods.
+    -> These abstract base classes define a set of methods that concrete classes must implement,
+        effectively serving as a form of interface.
+    -> This approach allows you to define a clear interface with required methods
+        using abstract base classes in Python.
