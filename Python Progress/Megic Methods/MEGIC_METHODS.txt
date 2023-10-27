@@ -1,0 +1,68 @@
+Magic Methods :-
+    -> Magic Methods is also called as Dunder Methods.
+    -> These are special methods in Python that have double underscores at the beginning and end of their names.
+    -> These methods are used to define how objects of a class behave in various contexts.
+    -> Also Magic methods are allows to customize the behavior of our classes.
+
+1) __add__(self, other) :-
+    Handles the + operator for objects.
+    It defines how two objects should be added together.
+
+2) __sub__(self, other) :-
+    Handles the - operator for objects.
+    It defines subtraction behavior.
+
+3) __mul__(self, other) :-
+    Handles the * operator for objects.
+    It defines multiplication behavior.
+
+4) __floordiv__(self, other) :-
+    Implements behavior for the built-in round()
+
+5) __div__(self, other) :-
+    Implements behavior for inversion using the ~ operator.
+
+6) __truediv__(self, other) :-
+    Implements behavior for the built-in abs()
+
+7) __eq__(self, other) : Defines behavior for the equality operator, ==
+8) __ne__(self, other) : Defines behavior for the inequality operator, !=
+9) __lt__(self, other) : Defines behavior for the less-than operator, <
+10) __gt__(self, other) : Defines behavior for the greater-than operator, >
+11) __le__(self, other) : Defines behavior for the less-than-or-equal-to operator, <=
+12) __ge__(self, other) : Defines behavior for the greater-than-or-equal-to operator, >=
+
+13) __init__(self) :-
+    The constructor method is called when an object is created and initialized.
+
+14) __str__(self) :-
+    Returns a string representation of the object, typically for human-readable output.
+
+15) __repr__(self) :-
+    Returns a string representation of the object that,
+    when passed to eval(), should produce an object with the same state.
+
+16) __unicode__(self) :-
+    This method to return an unicode string of a type.
+
+17) __format__(self, formatstr) :-
+    return a new style of string.
+
+18) __hash__(self) :-
+    It has to return an integer, and its result is used for quick key comparison in dictionaries.
+
+19) __nonzero__(self) :-
+    Defines behavior for when bool() is called on an instance of your class.
+
+20) __dir__(self) :-
+    This method to return a list of attributes of a class.
+
+21) __sizeof__(self) :-
+    It return the size of the object.
+
+22) __pow__(self, other) : Implements behavior for exponents using the ** operator.
+23) __lshift__(self, other) : Implements left bitwise shift using the << operator.
+24) __rshift__(self, other) : Implements right bitwise shift using the >> operator.
+25) __and__(self, other) : Implements bitwise and using the & operator.
+26) __or__(self, other) : Implements bitwise or using the | operator.
+27) __xor__(self, other) : Implements bitwise xor using the ^ operator.
