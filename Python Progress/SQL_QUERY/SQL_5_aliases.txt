@@ -63,5 +63,3 @@ Syntax:-
 	2. Functions are used in the query
 	3. Column names are big or not very readable
 	4. Two or more columns are combined together
-
-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
