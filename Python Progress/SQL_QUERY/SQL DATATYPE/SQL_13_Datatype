@@ -1,0 +1,73 @@
+Datatype :-
+    SQL (Structured Query Language) supports several data types that are used to define
+    the kind of data that can be stored in a database table.
+Note :-
+    The specific data types available may slightly depending on the database management system (DBMS) we are using !
+    but here are some common SQL data types:
+
+
+1) Numeric Data Types :-
+
+    i) INT (Integer) :-
+        Description = Used to store whole numbers.
+        Size = 32-bit
+        Range = (-2.1 billion to 2.1 billion)
+
+    ii) SMALLINT :-
+        Description = Stores smaller integer values than INT.
+        Size = 16-bit
+        Range = (-32,768 to 32,767)
+
+    iii) BIGINT :-
+        Description = Stores large integer values.
+        Size = 64-bit
+        Range = (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+                (-9,223 quadrillion to 9,223 quadrillion)
+
+    iv) DECIMAL(p, s) :- Represents fixed-point numbers with a specified precision (p) and scale (s).
+
+    v) NUMERIC(p, s) :- Similar to DECIMAL, for fixed-point numbers.
+
+    vi) FLOAT(p) :- Used to store approximate numeric values with a specified precision (p).
+    vii) REAL :- Stores single-precision floating-point numbers.
+    DOUBLE PRECISION: Stores double-precision floating-point numbers.
+    Character String Data Types:
+
+    CHAR(n): Fixed-length character strings with a specified length (n).
+    VARCHAR(n): Variable-length character strings with a maximum length of n.
+    TEXT: Stores large amounts of text data.
+    Date and Time Data Types:
+
+    DATE: Stores dates (year, month, day).
+    TIME: Stores times (hours, minutes, seconds).
+    TIMESTAMP: Stores both date and time.
+    DATETIME: Similar to TIMESTAMP.
+    INTERVAL: Represents a period of time.
+    Binary Data Types:
+
+    BINARY(n): Fixed-length binary data with a specified length (n).
+    VARBINARY(n): Variable-length binary data with a maximum length of n.
+    BLOB: Stores binary large objects, such as images or files.
+    Boolean Data Type:
+
+    BOOLEAN: Represents true or false values.
+    Enumerated Data Types:
+
+    ENUM: Stores one of a predefined set of values.
+    UUID (Universally Unique Identifier): Stores a universally unique identifier.
+
+    JSON Data Type: Stores JSON data.
+
+    XML Data Type: Stores XML documents.
+
+Geospatial Data Types: Used for geographical and spatial data.
+
+Array Data Types: Stores arrays of values.
+
+Row Data Type: Represents a composite type containing multiple fields.
+
+User-Defined Data Types: Some DBMSs allow you to define custom data types.
+
+Each database management system may have additional data types or variations on the above types.
+The specific data types available to you will depend on the DBMS you are using, so it's important to consult
+the documentation for your particular database system to see the complete list of data types and their details.

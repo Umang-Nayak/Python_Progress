@@ -1,0 +1,24 @@
+SQL Commands
+
+There are mainly 3 types of SQL commands :
+
+1) DDL (Data Definition Language): 
+	i) CREATE 
+	ii) ALTER
+	iii) DROP
+
+2) DML (Data Manipulation Language): 
+	i) SELECT
+	ii) INSERT
+	iii) UPDATE
+	iv) DELETE
+	
+3) DCL (Data Control Language): 
+	i) GRANT
+	ii) REVOKE
+
+
+
+
+
+

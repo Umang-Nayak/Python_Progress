@@ -1,0 +1,73 @@
+# String Functions :-
+
+1) CONCAT/||: Concatenates two or more strings.
+2) LENGTH/LEN: Returns the length of a string.
+3) SUBSTRING/SUBSTR: Extracts a portion of a string.
+4) UPPER/UCASE: Converts a string to uppercase.
+5) LOWER/LCASE: Converts a string to lowercase.
+6) TRIM: Removes leading and trailing spaces from a string.
+7) REPLACE: Replaces occurrences of a substring with another substring.
+8) CHARINDEX/INSTR: Finds the position of a substring in a string.
+9) LEFT: Returns a specified number of characters from the beginning of a string.
+10) RIGHT: Returns a specified number of characters from the end of a string.
+
+
+# Numeric Functions:
+
+1) ROUND: Rounds a numeric value to a specified number of decimal places.
+2) CEIL/CEILING: Rounds up to the nearest integer.
+3) FLOOR: Rounds down to the nearest integer.
+4) ABS: Returns the absolute value of a number.
+5) SQRT: Calculates the square root of a number.
+6) POWER: Raises a number to a specified power.
+7) MOD: Returns the remainder of a division operation.
+
+
+# Date and Time Functions:
+
+1) NOW/CURRENT_TIMESTAMP: Returns the current date and time.
+2) DATE: Extracts the date portion from a datetime value.
+3) TIME: Extracts the time portion from a datetime value.
+4) YEAR, MONTH, DAY, HOUR, MINUTE, SECOND: Extract components from a datetime.
+5) DATEADD/DATETIMEADD: Adds a specified interval to a datetime.
+6) DATEDIFF/DATETIMEDIFF: Calculates the difference between two datetimes.
+
+
+# Aggregate Functions:
+
+1) COUNT: Counts the number of rows in a result set.
+2) SUM: Calculates the sum of a numeric column's values.
+3) AVG: Computes the average (mean) of a numeric column's values.
+4) MIN: Finds the minimum value in a column.
+5) MAX: Finds the maximum value in a column.
+6) GROUP_CONCAT (or STRING_AGG in some database systems): Concatenates values from multiple rows into a single string.
+7) STDDEV (or STDEV): Calculates the standard deviation of a numeric column's values.
+8) VARIANCE: Computes the variance of a numeric column's values.
+9) FIRST: Returns the first value in a group of rows.
+10) LAST: Returns the last value in a group of rows.
+11) SUM DISTINCT: Calculates the sum of distinct values in a numeric column.
+12) AVG DISTINCT: Computes the average of distinct values in a numeric column.
+13) LISTAGG (or GROUP_CONCAT in some database systems): Concatenates values from multiple rows into a single string, with options for custom separators and ordering.
+14) COUNT DISTINCT: Counts the number of distinct values in a column.
+
+
+# Logical Functions:
+
+1) IF/ELSE, CASE: Perform conditional operations.
+2) NULLIF: Returns NULL if two expressions are equal.
+3) COALESCE: Returns the first non-null expression from a list.
+
+
+# Conversion Functions:
+
+1) CAST/CONVERT: Converts one data type to another.
+2) TO_DATE/TO_NUMBER/TO_CHAR (Database-specific): Converts values to date, numeric, or string formats.
+
+
+# Miscellaneous Functions:
+
+1) NVL (Oracle)/ISNULL (SQL Server)/IFNULL (MySQL): Replaces null values with a specified default value.
+2) USER: Returns the current user.
+3) SYSTEM_USER (SQL Server)/CURRENT_USER (MySQL): Returns the current user.
+4) SESSION_USER: Returns the current session user.
+5) DATABASE (Database-specific): Returns the current database name

@@ -1,0 +1,98 @@
+*) JOIN :-
+	A JOIN clause is used to combine rows from two or more tables, 
+	based on a related column between them.
+
+Different Types of SQL JOINs :-
+	i) (INNER) JOIN :-
+		Returns records that have matching values in both tables
+	ii) LEFT (OUTER) JOIN :- 
+		Returns all records from the left table, 
+		and the matched records from the right table
+	iii) RIGHT (OUTER) JOIN :- 
+		Returns all records from the right table, 
+		and the matched records from the left table
+	iv) FULL (OUTER) JOIN :- 
+		Returns all records when there is a match in either left or right table
+
+
+1) INNER JOIN :-
+	The INNER JOIN keyword selects records that have matching values in both tables.
+	
+	Tip :- 
+	JOIN and INNER JOIN are the same.
+
+	Syntax :-
+	SELECT column_name(s) FROM table1 INNER JOIN table2
+	ON table1.column_name = table2.column_name;
+	
+	Note :- 
+	The INNER JOIN keyword returns only rows with a match in both tables.
+
+	Naming the Columns :-
+	It is a good practice to include the table name when specifying columns in the SQL statement.
+	The Query works without specifying table names, 
+	because none of the specified column names are present in both tables.
+	
+	JOIN or INNER JOIN :-
+	JOIN and INNER JOIN will return the same result.
+	INNER is the default join type for JOIN, so when you write JOIN the parser actually writes INNER JOIN.
+	
+	
+2) LEFT JOIN :-
+	The LEFT JOIN keyword returns all records from the left table (table1), 
+	and the matching records from the right table (table2). 
+	The result is 0 records from the right side, if there is no match.
+
+	Syntax :-
+	SELECT column_name(s) FROM table1 LEFT JOIN table2
+	ON table1.column_name = table2.column_name;
+	
+	Note :- 
+	The LEFT JOIN keyword returns all records from the left table, 
+	even if there are no matches in the right table.
+	
+	
+3) RIGHT JOIN :-
+	The RIGHT JOIN keyword returns all records from the right table (table2), 
+	and the matching records from the left table (table1). 
+	The result is 0 records from the left side, if there is no match.
+
+	Syntax :-
+	SELECT column_name(s) FROM table1 RIGHT JOIN table2
+	ON table1.column_name = table2.column_name;
+	
+	Note :- 
+	In some databases RIGHT JOIN is called RIGHT OUTER JOIN.
+	The RIGHT JOIN keyword returns all records from the right table, 
+	even if there are no matches in the left table.
+
+
+4) FULL OUTER JOIN :-
+	The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
+
+	Tip :- 
+	FULL OUTER JOIN and FULL JOIN are the same.
+
+	Syntax :-
+	SELECT column_name(s) FROM table1 FULL OUTER JOIN table2
+	ON table1.column_name = table2.column_name
+	WHERE condition;
+	
+	Note :- 
+	FULL OUTER JOIN can potentially return very large result-sets!
+	The FULL OUTER JOIN keyword returns all matching records from both tables whether the other table matches or not. 
+	So, if there are rows in "table1" that do not have matches in "table2", 
+	or if there are rows in "table2" that do not have matches in "table1", 
+	those rows will be listed as well.
+	
+
+5) Self Join :-
+	A self join is a regular join, but the table is joined with itself.
+
+	Syntax :-
+	SELECT column_name(s) FROM table1 T1, table1 T2 WHERE condition;
+	
+	Note :-
+	T1 and T2 are different table aliases for the same table.
+	
+	

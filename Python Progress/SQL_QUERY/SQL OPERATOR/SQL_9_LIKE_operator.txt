@@ -1,0 +1,97 @@
+*) LIKE :-
+	The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+	
+There are two wildcards often used in conjunction with the LIKE operator :-
+	i) The percent sign % represents zero, one, or multiple characters
+	ii) The underscore sign _ represents one, single character
+
+Syntax :-
+	SELECT columnN FROM table_name WHERE columnN LIKE pattern;
+
+Wildcard Characters :-
+	A wildcard character is used to substitute one or more characters in a string.
+	Wildcard characters are used with the LIKE operator. 
+	The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+	
+	
+Symbols :-
+	%	=	Represents zero or more characters
+	_	=	Represents a single character
+	[]	=	Represents any single character within the brackets *
+	^	=	Represents any character not in the brackets *
+	-	=	Represents any single character within the specified range *
+	{}	=	Represents any escaped character **
+
+Note :-
+	* Not supported in PostgreSQL and MySQL databases.
+	** Supported only in Oracle databases.
+
+
+1) The _ Wildcard :-
+	The _ wildcard represents a single character.
+	It can be any character or number, but each _ represents one, 
+	and only one, character.
+	
+	Syntax :-
+	SELECT * FROM Customers WHERE city LIKE 'char_c__r';
+	
+	
+2) The % Wildcard :-	
+	The % wildcard represents any number of characters, even zero characters.
+	
+	Syntax :-
+	SELECT * FROM table_name WHERE column_name LIKE '%characters%';
+
+
+3) The [] Wildcard :- 
+	The [] wildcard returns a result if any of the characters inside gets a match.
+	
+	Syntax :-
+	SELECT * FROM table_name WHERE column_name LIKE '[characters]%';
+	
+	
+4) The - Wildcard :-	
+	The - wildcard allows you to specify a range of characters inside the [] wildcard.
+
+	Syntax :-
+	SELECT * FROM table_name WHERE column_name LIKE '[StartCharacter - EndCharacter]%';
+
+
+5) Starts With :-
+	To return records that starts with a specific letter or phrase, 
+	add the % at the end of the letter or phrase.
+	
+	Syntax :-
+	SELECT * FROM table_name WHERE column_name LIKE 'characters%';
+	
+6) Ends With :-
+	To return records that ends with a specific letter or phrase, 
+	add the % at the beginning of the letter or phrase.
+	
+	Syntax :-
+	SELECT * FROM table_name WHERE column_name LIKE '%characters';
+	
+	
+7) Contains :-
+	To return records that contains a specific letter or phrase, 
+	add the % both before and after the letter or phrase.
+	
+	Syntax :-
+	SELECT * FROM table_name WHERE column_name LIKE '%characters%';
+	
+	
+8) Combine Wildcards :-
+	Any wildcard, like % and _ , can be used in combination with other wildcards.
+
+	Syntax :-
+	SELECT * FROM table_name WHERE column_name LIKE 'charac____%';
+	
+
+9) Without Wildcard :-
+	If no wildcard is specified, the phrase has to have an exact match to return a result.
+	
+	Syntax :-
+	SELECT * FROM table_name WHERE column_name LIKE 'characters';
+	
+	
+

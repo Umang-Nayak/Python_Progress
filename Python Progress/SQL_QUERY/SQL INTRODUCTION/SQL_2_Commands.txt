@@ -1,0 +1,158 @@
+1) SELECT :-
+	The SELECT statement is used to select data from a database.
+	
+	Syntax :-
+	SELECT column_name FROM table_name;
+	
+	
+2) SELECT Distinct :-
+	The SELECT DISTINCT statement is used to return only distinct (different) values.
+	
+	Syntax :-
+	SELECT DISTINCT column_name FROM table_name;
+	
+	
+3) WHERE :-
+	The WHERE clause is used to filter records.
+	It is used to extract only those records that fulfill a specified condition.
+	
+	Syntax :-
+	SELECT column_name FROM table_name WHERE condition;
+	
+	
+4) ORDER BY :-
+	The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+	
+	Syntax :-
+	SELECT column_name FROM table_name ORDER BY column_name ASC|DESC;
+	
+	i) DESC :-
+		The ORDER BY keyword sorts the records in ascending order by default. 
+		To sort the records in descending order, use the DESC keyword.
+		
+		Syntax of DESC :-
+		SELECT column_name FROM table_name ORDER BY column_name ASC|DESC;
+
+	ii) ORDER BY Several Columns :-
+		The following SQL statement selects all customers from the "Customers" table, sorted by the "Country" and the "CustomerName" column. 
+		This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName.
+		
+		Query : SELECT * FROM Customers ORDER BY Country, CustomerName;
+		
+	iii) Using Both ASC and DESC
+		The following SQL statement selects all customers from the "Customers" table, 
+		sorted ascending by the "Country" and descending by the "CustomerName" column.
+		
+		Query : SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;
+
+
+5) AND :-
+	The WHERE clause can contain one or many AND operators.
+	
+	Syntax :-
+	SELECT column_name FROM table_name WHERE condition1 AND condition2;
+	
+	
+# The AND operator displays a record if all the conditions are TRUE.
+# The OR operator displays a record if any of the conditions are TRUE.
+
+
+6) OR :-
+	The WHERE clause can contain one or more OR operators.
+	
+	Syntax :-
+	SELECT column_name FROM table_name WHERE condition1 OR condition2;
+	
+
+7) NOT :-
+	The NOT operator is used in combination with other operators to give the opposite result, 
+	also called the negative result.	
+	
+	Syntax :-
+	SELECT column_name FROM table_name WHERE NOT condition;
+	
+
+8) INSERT :-
+	The INSERT INTO statement is used to insert new records in a table.
+	
+	Syntax :-
+	1. Specify both the column names and the values to be inserted :-
+	INSERT INTO table_name (column1, columnN) VALUES (value1, valueN);
+	
+	2. If you are adding values for all the columns of the table, 
+		you do not need to specify the column names in the SQL query.
+		However, make sure the order of the values is in the same 
+		order as the columns in the table :-
+		INSERT INTO table_name VALUES (value1, value2, valueN);
+
+
+9) NULL :-
+	A field with a NULL value is a field with no value.
+	If a field in a table is optional, it is possible to insert a 
+	new record or update a record without adding a value to this field. 
+	Then, the field will be saved with a NULL value.
+	
+	Syntax :-
+	1. IS NULL Syntax :-
+	SELECT column_names FROM table_name WHERE column_name IS NULL;
+	
+	2. IS NOT NULL Syntax :-
+	SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
+	
+
+10) UPDATE :-
+	The UPDATE statement is used to modify the existing records in a table.
+	
+	Syntax :-
+	UPDATE table_name SET column1 = value1, columnN = valueN WHERE condition;
+	
+
+11) DELETE :-
+	The DELETE statement is used to delete existing records in a table.
+	
+	Syntax:-
+	1. DELETE records :-
+	DELETE FROM table_name WHERE condition;
+	
+	2. DELETE all records :-
+	DELETE FROM table_name;
+	
+	3. DELETE table :-
+	DROP TABLE table_name;
+	
+
+12) SELECT TOP :-
+	The SELECT TOP clause is used to specify the number of records to return.
+	The SELECT TOP clause is useful on large tables with thousands of records. 
+	Returning a large number of records can impact performance.
+	
+	Syntax :-
+	
+	1. SQL Server / MS Access Syntax :-
+	SELECT TOP number|percent column_name(s) FROM table_name WHERE condition;
+
+	2. MySQL Syntax :-
+	SELECT column_name(s) FROM table_name WHERE condition LIMIT number;
+	
+	3. Oracle 12 Syntax :-
+	SELECT column_name(s) FROM table_name ORDER BY column_name(s) FETCH FIRST number ROWS ONLY;
+	
+
+13) SELECT INTO :-
+	The SELECT INTO statement copies data from one table into a new table.
+
+	Syntax :-
+	
+	1. For copy all columns into a new table :-
+	SELECT * INTO newtable [IN externaldb] FROM oldtable WHERE condition;
+
+	2. For copy only some columns into a new table :-
+	SELECT column1, column2, columnN INTO newtable [IN externaldb] FROM oldtable WHERE condition;
+	
+	Note :-
+	The new table will be created with the column-names and types as defined in the old table. 
+	You can create new column names using the AS clause.
+	
+	Tip :- 
+	SELECT INTO can also be used to create a new, empty table using the schema of another. 
+	Just add a WHERE clause that causes the query to return no data.

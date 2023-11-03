@@ -1,0 +1,87 @@
+1) IN :-
+	The IN operator allows you to specify multiple values in a WHERE clause.
+	The IN operator is a shorthand for multiple OR conditions.
+	
+Syntax :-
+	SELECT column_name(s) FROM table_name WHERE column_name IN (value1, valueN);
+	
+	
+2) NOT IN :-
+	By using the NOT keyword in front of the IN operator, 
+	you return all records that are NOT any of the values in the list.
+	
+Syntax :-
+	SELECT column_name(s) FROM table_name WHERE column_name NOT IN (value1, valueN);
+	
+
+3) IN (SELECT) :-
+	You can also use IN with a subquery in the WHERE clause.
+	With a subquery you can return all records from the main 
+	query that are present in the result of the subquery.
+	
+Syntax :-
+	SELECT * FROM table_name WHERE column_name IN (SELECT column_name FROM table_name);
+	
+	
+4) NOT IN (SELECT) :-
+	You can also use NOT IN with a subquery in the WHERE clause.
+	With a subquery you can return all records from the main 
+	query that are not present in the result of the subquery.
+
+Syntax :-	
+	SELECT * FROM table_name WHERE column_name NOT IN (SELECT column_name FROM table_name);
+	
+	
+5) BETWEEN :-
+	The BETWEEN operator selects values within a given range. 
+	The values can be numbers, text, or dates.
+	The BETWEEN operator is inclusive: begin and end values are included. 
+
+Syntax :-
+	SELECT column_name(s) FROM table_name WHERE column_name BETWEEN value1 AND value2;
+	
+	
+6) NOT BETWEEN :-
+	To display the products outside the range of the previous example, use NOT BETWEEN.
+	
+Syntax :-
+	SELECT column_name(s) FROM table_name WHERE column_name NOT BETWEEN value1 AND value2;
+	
+
+7) BETWEEN with IN :-
+	The following SQL statement selects all values with a column between value1 and value2.
+
+Syntax :-
+	SELECT column_name(s) FROM table_name WHERE column_name 
+	BETWEEN value1 AND value2 AND column_name IN (value1,value2,valueN);
+	
+	
+8) BETWEEN Text Values :-
+	The following SQL statement selects all values with a Pro 
+	alphabetically between TextValue1 and TextValue2.
+
+Syntax :-
+	SELECT column_name(s) FROM table_name WHERE column_name 
+	BETWEEN 'TextValue1' AND 'TextValue2' ORDER BY column_name;
+	
+
+9)	NOT BETWEEN Text Values :-
+	The following SQL statement selects all values with 
+	a column not between TextValue1 and TextValue2.
+
+Syntax :-	
+	SELECT column_name(s) FROM table_name WHERE column_name 
+	NOT BETWEEN 'TextValue1' AND 'TextValue2' ORDER BY column_name;
+	
+
+10) BETWEEN Dates :-
+	The following SQL statement selects all orders with an OrderDate 
+	between '01-July-1996' and '31-July-1996'.
+
+Syntax :-
+	1st :-
+	SELECT column_name(s) FROM table_name WHERE column_name BETWEEN #MM/DD/YYYY# AND #MM/DD/YYYY#;
+	2nd :-
+	SELECT column_name(s) FROM table_name WHERE column_name BETWEEN 'YYYY-MM-DD' AND 'YYYY-MM-DD';
+	
+	
